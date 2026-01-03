@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    min-height: 60px;
+    font-size: clamp(16px, 1.25vw, 20px);
+    gap: 20px;
+}
+
+.header__logo {
+    width: 89px;
+    aspect-ratio: 89/40;
+    object-fit: contain;
+}
+
+.header__date-and-location {
+    margin: 0;
+    font-weight: 700;
+    white-space: normal;
+    flex-shrink: 1;
+}
+
+.header__add-clothes-btn {
+    padding: 8px 16px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    transition: opacity 0.3s ease;
+    
+}
+
+.header__add-clothes-btn:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.header__user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.header__username {
+    margin: 0;
+    height: 25px;
+    max-width: 157px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 20px;
+    
+}
+
+.header__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-left: 12px;
+}
+
+.header__avatar_placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+}

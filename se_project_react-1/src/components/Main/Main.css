@@ -1,0 +1,19 @@
+.main {
+    background-color: #f3f3f3;
+}
+
+.main__description {
+    margin: 40px 0 34px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.main__items {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    width: 100%;
+}
+
