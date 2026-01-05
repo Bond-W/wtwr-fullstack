@@ -13,7 +13,8 @@ The project follows modern web development practices, including modular JavaScri
 ---
 
 ## Backend Repository
-Backend API repo: https://github.com/Bond-W/<se_project_express>
+Backend API repo: https://github.com/Bond-W/se_project_express
+
 
 
 ## Table of Contents
@@ -106,9 +107,11 @@ No public demo link is available yet.
 ### 1) Start the backend API
 In your backend repo folder:
 
-```bash
+git clone https://github.com/Bond-W/se_project_react.git
+cd se_project_react-1
 npm install
 npm run dev
+
 
 
 
@@ -121,8 +124,10 @@ npm run dev
 - **React**
 - **React Router v6** 
 - **Context API** 
-- **JSON Server**
 - **OpenWeatherMap API**
+- **Node.js / Express**
+- **MongoDB / Mongoose**
+- **JWT auth**
 
 ---
 
@@ -150,9 +155,21 @@ src/
 ---
 
 ## API Reference
+- POST /signup
+- POST /signin
+- GET /users/me
+- PATCH /users/me
+- PUT /items/:id/likes
+- DELETE /items/:id/likes
+- POST /items (protected)
+- DELETE /items/:id (protected)
+- GET /items (public)
+
+
+
 
 ### Base URL
-- http://localhost:3000
+- http://localhost:3001
 
 ### Endpoints 
 - **Fetch all clothing items:** `GET /items`
@@ -164,8 +181,8 @@ src/
 ## Acknowledgments
 - **Practicum by TripleTen** for providing project inspiration and initial resources as well as support from staff.
 - **OpenWeather** for real-time weather data.
-- **json-server** for fast API prototyping.
+
 
 ## Contact Me
-[GitHub](https://github.com/)
+[GitHub](https://github.com/Bond-W)
 [LinkedIn](www.linkedin.com/in/bondawyatt)
