@@ -92,7 +92,7 @@ No public demo link is available yet.
 ### Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Bond-W/se_project_react.git
+   git clone https://github.com/Bond-W/se_project_react-1.git
 
 2. Navigate to the project directory:
    ```bash
@@ -107,7 +107,7 @@ No public demo link is available yet.
 ### 1) Start the backend API
 In your backend repo folder:
 
-git clone https://github.com/Bond-W/se_project_react.git
+git clone https://github.com/Bond-W/se_project_express
 cd se_project_react-1
 npm install
 npm run dev
