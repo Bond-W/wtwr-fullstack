@@ -8,7 +8,7 @@ https://github.com/Bond-W/wtwr-fullstack/tree/main/se_project_react-1
 
 ## Backend
 Express + MongoDB API:
-https://github.com/Bond-W/se_project_express
+https://github.com/Bond-W/se_project_express.git
 
 ### Backend setup
 ```bash
