@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './RegisterModal.css';
 
 function RegisterModal({ isOpen, onClose, onRegister }) {
 const [name, setName] = useState('');

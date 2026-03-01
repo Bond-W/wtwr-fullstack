@@ -1,0 +1,23 @@
+.sidebar {
+    display: flex;
+    gap: 16px;
+    margin-right: 116px;
+    font-size: 20px;
+}
+
+.sidebar__avatar {
+    width: 56px;
+    height: 56px;
+}
+
+.sidebar__avatar_placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+}

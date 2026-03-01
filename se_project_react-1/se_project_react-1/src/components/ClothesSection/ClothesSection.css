@@ -1,0 +1,42 @@
+.clothes-section {
+    font-size: 20px;
+}
+
+.clothes-section__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 35px 0 0;
+    font-size: 20px;
+    
+}
+
+.clothes-section__button {
+    border: none;
+    background: transparent;
+    opacity: 60%;
+    line-height: 1;
+    height: 25px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.clothes-section__button:hover {
+    opacity: 1;
+}
+
+.clothes-section__title {
+    margin: 0;
+    font-weight: 700;
+}
+
+.clothes-section__items {
+    width: 1015px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+}

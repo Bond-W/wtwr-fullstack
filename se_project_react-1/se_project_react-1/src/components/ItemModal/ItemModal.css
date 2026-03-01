@@ -1,0 +1,44 @@
+.modal__content.modal__content_type_image {
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  width: 498px;
+}
+
+.modal__close-preview {
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+}
+
+.modal__close-preview:hover {
+  opacity: 50%;
+  transition: all 0.2s;
+}
+
+.modal__image {
+  box-sizing: content-box;
+  width: 496px;
+  height: 498px;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px;
+}
+
+.modal__footer {
+  margin: 20px auto 32px 32px;
+  background-color: white;
+  position: relative;
+  
+}
+
+.modal__caption {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.modal__weather {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 12px 0 0 0;
+}
