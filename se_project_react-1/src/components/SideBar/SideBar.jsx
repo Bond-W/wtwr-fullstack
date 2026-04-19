@@ -4,7 +4,7 @@ import CurrentUserContext from "../../contexts/CurrentUserContext";
 
 
 
-function SideBar(onEditProfile) {
+function SideBar(onEditProfile, onLogout) {
     const currentUser = useContext(CurrentUserContext);
 
     const userName = currentUser?.name || "User";
@@ -17,7 +17,7 @@ function SideBar(onEditProfile) {
         {userAvatar ? (
         <img src={userAvatar} alt={userName} className="sidebar__avatar" />
         ) : (
-        <div className="siderbar__avatar sidebar__avatar-placeholder">{placeholderLetter}</div>
+        <div className="sidebar__avatar sidebar__avatar-placeholder">{placeholderLetter}</div>
         )}
         <p className="sidebar__username">{userName}</p>
         <button className="sidebar__edit-button" onClick={onEditProfile}>

@@ -310,11 +310,19 @@ const handleCardLike = (item) => {
           isOpen={isRegisterModalOpen}
           onClose={() => setIsRegisterModalOpen(false)}
           onRegister={handleRegister}
+          onSwitchToLogin={() => {
+    setIsRegisterModalOpen(false);
+    setIsLoginModalOpen(true);
+  }}
         />
         <LoginModal
           isOpen={isLoginModalOpen}
           onClose={() => setIsLoginModalOpen(false)}
           onLogin={handleLogin}
+          onSwitchToRegister={() => {
+    setIsLoginModalOpen(false);
+    setIsRegisterModalOpen(true);
+  }}
         />
         <EditProfileModal
           isOpen={isEditProfileModalOpen}

@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
+import ModalWithForm from '../ModalWithForm/ModalWithForm';
 import './LoginModal.css';
 
-function LoginModal({ isOpen, onClose, onLogin }) {
+function LoginModal({ isOpen, onClose, onLogin, onSwitchToRegister }) {
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 
@@ -10,19 +11,20 @@ const [password, setPassword] = useState('');
         onLogin({ email, password });
     }
 
-    if(!isOpen) return null;
 
     return (
-        <div className="modal">
-            <div className="modal__content">
-                <button className='modal__close' type='button' onClick={onClose}>
-                    ×
-                    </button>
-                <h2 className='modal__title'>Sign in</h2>
-                <form className='modal__form' onSubmit={handleSubmit}>
+        <ModalWithForm
+            title="Sign in"
+            buttonText="Sign in"
+            isOpen={isOpen}
+            onClose={onClose}
+            onSubmit={handleSubmit}
+        >
+        
                     <label className='modal__label'>
                         Email
                         <input
+                        className='modal__input'
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -33,6 +35,7 @@ const [password, setPassword] = useState('');
                     <label className='modal__label'>
                         Password
                         <input
+                        className='modal__input'
                             type="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
@@ -40,10 +43,10 @@ const [password, setPassword] = useState('');
                             />
                     </label>
 
-                    <button className='modal__submit' type='submit'>Sign in</button>
-                </form>
-            </div>
-        </div>
+                    <button className='modal__switch-button' type='button' onClick={onSwitchToRegister}>
+                        Don't have an account? Sign up
+                    </button>
+            </ModalWithForm>    
     );
 }
 
